@@ -85,6 +85,12 @@ function chooseGift(card){
     let cards =
     document.querySelectorAll(".gift-card");
 
+    const otherGiftLabels = [
+        "<span>🎁<br>The Ultimate Experience</span>",
+        "<span>🎁<br>The Ultimate Gift</span>"
+    ];
+    let nextOtherGift = 0;
+
 
     cards.forEach(c=>{
 
@@ -94,31 +100,22 @@ function chooseGift(card){
 
 
 
-    cards.forEach((c,index)=>{
+    cards.forEach(c=>{
 
 
         setTimeout(()=>{
 
-if(index===0){
+if(c === card){
 
     c.innerHTML =
     "<span>✨<br>Mix & Match</span>";
 
-}
-
-
-if(index===1){
+} else {
 
     c.innerHTML =
-    "<span>🎁<br>The Ultimate Experience</span>";
+    otherGiftLabels[nextOtherGift];
 
-}
-
-
-if(index===2){
-
-    c.innerHTML =
-    "<span>🎁<br>The Ultimate Gift</span>";
+    nextOtherGift++;
 
 }
 
