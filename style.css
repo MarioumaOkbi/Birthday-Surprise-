@@ -584,8 +584,6 @@ video {
 
     opacity:0;
 
-    animation:riddleReveal 1s ease-out forwards;
-
 }
 
 
@@ -861,7 +859,9 @@ transform:translateY(-20px);
     animation-delay:3s;
 }
 
-
+.riddle-card.reveal {
+    animation: riddleReveal 1s ease-out forwards;
+}
 
 
 
