@@ -197,7 +197,7 @@ function solveRiddle(button){
 
     const answers = [
         ["cooking", "cooking class"],
-        ["nike", "nike air"],
+        ["nike", "shoes", "nike air"],
         ["ck", "ck boxers", "boxers", "calvin klein"],
         ["travel", "travelling", "traveling", "trip"],
         ["skydiving", "sky diving", "skydive"]
